@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>DecodeLabs | Industrial Training Kit</title>
+  <meta name="description" content="Responsive frontend interface – Full Stack Intern Project 1">
+  <!-- Google Fonts: Inter (headings) + Open Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="logo">Decode<span>Labs</span></a>
+    <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="section-padding">
+    <div class="container hero">
+      <div class="hero-content">
+        <h1>Build Your Future<br>with Responsive Craft</h1>
+        <p>Master the art of mobile-first, semantic, and accessible frontend development. Industrial Training Kit — Project 1.</p>
+        <a href="#contact" class="btn" id="getStartedBtn">Get Started →</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://picsum.photos/id/0/600/400" alt="Modern workspace with laptop and code on screen" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section (CSS GRID) -->
+  <section id="features" class="section-padding" style="background: #F9F5EF;">
+    <div class="container">
+      <h2>Core Toolkit</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📱⚡</div>
+          <h3>Mobile-First</h3>
+          <p>Responsive layouts built from smallest screen upward, using clamp() and fluid grids.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧩🔷</div>
+          <h3>Grid & Flexbox</h3>
+          <p>Macro layouts with CSS Grid, micro components with Flexbox — perfect harmony.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♿🧠</div>
+          <h3>Semantic + A11y</h3>
+          <p>WCAG principles, landmark elements, screen-reader friendly & keyboard navigation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨✨</div>
+          <h3>2025 Aesthetics</h3>
+          <p>Mocha Mousse · Ethereal Blue · Moonlit Grey. Warm, grounded, trustworthy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️🖱️</div>
+          <h3>Interactive JS</h3>
+          <p>Smooth scroll, mobile menu, form validation — lightweight state management.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📐🧪</div>
+          <h3>Fluid Typography</h3>
+          <p>clamp() powered headlines & body text, readable on any viewport.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <h2>About the Kit</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p><strong>Industrial Training Program — DecodeLabs</strong> brings real-world full stack challenges. Project 1 emphasizes responsive interfaces, semantic integrity, and modern CSS architecture.</p>
+          <p>You'll learn to craft websites that adapt flawlessly from 360px to 4K displays. Every component is built with accessibility, performance, and future-proof code in mind.</p>
+          <p>This milestone unlocks further backend projects. Master the frontend before databases — that's our philosophy.</p>
+          <a href="#features" class="btn btn-outline" style="margin-top: 0.5rem;">Explore tools →</a>
+        </div>
+        <div class="about-img">
+          <img src="https://picsum.photos/id/20/500/350" alt="Developers collaborating on responsive design" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section + Form -->
+  <section id="contact" class="section-padding" style="background: #F9F5EF;">
+    <div class="container">
+      <h2>Start Your Journey</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 1.5rem auto;">Have questions? Our training coordinators will reach out within 24 hours.</p>
+      <form id="contactForm" class="contact-form" action="#" method="post">
+        <input type="text" id="name" placeholder="Full name" required aria-label="Your name">
+        <input type="email" id="email" placeholder="Email address" required aria-label="Email address">
+        <textarea rows="4" id="message" placeholder="Tell us about your frontend goals..." required aria-label="Your message"></textarea>
+        <button type="submit" class="btn">Send Message ✉️</button>
+        <div id="formFeedback" class="form-message"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>© 2026 DecodeLabs — Industrial Training Kit | Full Stack Project 1</p>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Email">Email</a>
+    </div>
+    <p style="font-size: 0.8rem;">📍 Greater Lucknow, India | +91 89330 06408</p>
+  </div>
+</footer>
+
+<button class="go-top" id="goTopBtn" aria-label="Back to top">↑</button>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
